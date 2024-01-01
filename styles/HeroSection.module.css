@@ -1,0 +1,50 @@
+/* styles/HeroSection.module.css */
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  margin: auto; /* Add this line */
+  }
+  
+  .hero h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .hero span{
+    background: #FFB76B;
+background: linear-gradient(to right, #FFB76B 10%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 30px;
+    }
+  
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  }
+  

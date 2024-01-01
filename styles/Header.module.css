@@ -1,0 +1,69 @@
+/* styles/Header.module.css */
+.header {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin: 1rem;
+  }
+  
+  
+
+  .logo {
+    cursor: pointer;
+    font-size: 34px;
+    line-height: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+  .desktopMenuListItem {
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: sans-serif;
+}
+  
+  @media (max-width: 600px) {
+    .navbar {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+
+    .logo {
+        cursor: pointer;
+        font-size: 28px;
+        line-height: normal;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .desktopMenuListItem {
+        display: none;
+    }
+  
+    .navLink {
+      margin: 5px 0;
+    }
+  }
+  

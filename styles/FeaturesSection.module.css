@@ -1,0 +1,49 @@
+/* styles/FeaturesSection.module.css */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .card {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    position: relative;
+    color: #bdb7af62;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12%;
+    /* background-color: #fff; */
+    border: none;
+    /* border-radius: 100%; */
+    height: auto;
+    margin-top: -20px; /* Adjust this value to fit your design */
+  }
+  
+  /* Responsive Styles for Mobile Screens */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%; /* Make cards full width on mobile */
+      margin-bottom: 20px;
+      
+    }
+  }
+  
